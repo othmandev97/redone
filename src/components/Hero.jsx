@@ -53,6 +53,7 @@ const cardboxes = [
     image: RedOneMusic,
     icon: svgRedOneMusic,
     iconAlt: "icon music",
+    link : 'https://redone-music.com/',
     active: false,
   },
   {
@@ -61,6 +62,7 @@ const cardboxes = [
     image: RedOneFifa,
     icon: svgOneFifa,
     iconAlt: "icon fifa",
+    link : 'https://redone-fifa.com/',
     active: false,
   },
   {
@@ -69,6 +71,7 @@ const cardboxes = [
     image: RedOneProducer,
     icon: svgRedOneProducer,
     iconAlt: "icon producer",
+    link : 'https://redone-producer.com/',
     active: false,
   },
   {
@@ -77,6 +80,7 @@ const cardboxes = [
     image: RedOneVirtual,
     icon: svgRedOneVirtual,
     iconAlt: "icon Meta",
+    link : '',
     active: false,
   },
 ];

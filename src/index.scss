@@ -183,6 +183,12 @@ body {
 
 
   &--email{
+    span{
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    }
     @media (max-width: 767px) {
       display: none !important ;
     }

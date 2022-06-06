@@ -27,7 +27,7 @@ export default function Header() {
       <div className="footer__wrapper">
         <div className="footer__wrapper--email">
           <IoIosMail className="footer__wrapper--email--svgIcon" />
-          <span  className="footer__wrapper--email--text">Email : contact@redone.com</span>
+          <span  className="footer__wrapper--email--text"><a href="mailto:contact@redone.com">Email : contact@redone.com</a> </span>
         </div>
         <div className="footer__wrapper--numbers">
           <div className="footer__wrapper--number">US: +1 (888) 256-8312</div>

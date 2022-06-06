@@ -46,7 +46,7 @@ export const Card = (props) => {
               <h3>{card.title}</h3>
             </div>
             <div className="hero__wrapper--panel--visit">
-              <a href="#" className="hero__wrapper--panel--visit--button">
+              <a target="_blank" href={card.link} className="hero__wrapper--panel--visit--button">
                 view more 
               </a>
               <span><IoIosArrowRoundForward/></span> 

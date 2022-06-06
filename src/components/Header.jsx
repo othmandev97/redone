@@ -23,28 +23,28 @@ export default function Header() {
             <IoMdMenu />
           </button>*/}
           <div className="header__wrapper--logo">
-            <a href="#">
+            <a href="/">
               <img src={Logo} alt="Red One logo" />
             </a>
           </div>
           <div className="header__wrapper--socialicons">
             <div className="header__wrapper--socialicons--item">
-              <a href="#">
+              <a target="_blank"  href="https://fr-fr.facebook.com/RedOneOfficial">
                 <IoLogoFacebook />
               </a>{" "}
             </div>
             <div className="header__wrapper--socialicons--item">
-              <a href="#">
+              <a target="_blank"  href="https://www.instagram.com/redone/">
                 <IoLogoInstagram />
               </a>
             </div>
             <div className="header__wrapper--socialicons--item">
-              <a href="#">
+              <a target="_blank"  href="https://twitter.com/redone_official">
                 <IoLogoTwitter />
               </a>
             </div>
             <div className="header__wrapper--socialicons--item">
-              <a href="#">
+              <a target="_blank" href="https://www.youtube.com/channel/UCMwDdAvIP0MVuqENDpME0xg">
                 <IoLogoYoutube />
               </a>
             </div>
