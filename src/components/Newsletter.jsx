@@ -9,16 +9,17 @@ export const Newsletter = () => {
 
 
 
-  function sendEmail(){
-    Email.send({
-      SecureToken : "88a02126-5893-40a2-8cac-8fcf0fdbc84e",
-      To : 'othmanelkarkoubi9@gmail.com',
-      From : "othmanelkarkoubi1997@gmail.com",
-      Subject : "Test email",
-      Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-    }).then(
-      message => alert('send successfully')
-    );
+  const hundleSubmit = (e) => {
+    
+    e.preventDefault();
+    emailjs.sendForm(`gmail`, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+    .then((result) => {
+    alert("Message Sent, We will get back to you shortly", result.text);
+    },
+    (error) => {
+    alert("An error occurred, Please try again", error.text);
+    });
+
   }
 
   return (
@@ -30,7 +31,7 @@ export const Newsletter = () => {
             subscribe to the newsletter and don't miss any updates related to RedOne's new <br /> 
             music, productions, FIFA related events and META presence.
           </p>
-          <form onSubmit={sendEmail()}>
+          <form onSubmit={ hundleSubmit(e) }>
               <div className="newsletter__wrapper--content--terms">
                 <input type="checkbox" name="termsCheck" id="termsCheck" required/>
                 <label htmlFor="termsCheck">
@@ -39,10 +40,10 @@ export const Newsletter = () => {
               </div>
 
               <div className="newsletter__wrapper--content--form">
-                <form >
+                {/* <form > */}
                   <input type="email" id="email" name="email" placeholder="yourname@email.com"/>
                   <button>Subscribe to newsletter</button>
-                </form>
+                {/* </form> */}
               </div>
           </form>
           <div className="newsletter__wrapper--content--social">
